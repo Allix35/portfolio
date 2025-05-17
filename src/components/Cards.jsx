@@ -3,26 +3,37 @@ import React from "react";
 const Cards = ({ title, category, image, github, live, description }) => {
   return (
     <div className="project-card">
-      <img src={image} alt={`Aperçu de ${title}`} className="project-image" loading="lazy" />
+      <img
+        src={image}
+        alt={`Aperçu de ${title}`}
+        className="project-image"
+        loading="lazy"
+      />
       <div className="project-info">
         <h3>{title}</h3>
 
+        {/* Logos des technologies (accessibilité OK + lazy loading) */}
         {Array.isArray(category) && (
-  <div className="project-tech">
-    {category.map((logo, index) => (
-      <img
-        key={index}
-        src={logo.src}
-        alt={logo.alt}
-        className="tech-logo"
-        loading="lazy"
-      />
-    ))}
-  </div>
-)}
+          <div className="project-tech">
+            {category.map((logo, index) => (
+              <img
+                key={index}
+                src={logo.src}
+                alt=""
+                aria-hidden="true"
+                className="tech-logo"
+                loading="lazy"
+              />
+            ))}
+          </div>
+        )}
 
-        {description && <p className="project-description">{description}</p>}
+        {/* Description */}
+        {description && (
+          <p className="project-description">{description}</p>
+        )}
 
+        {/* Liens */}
         <div className="project-links">
           <a href={github} target="_blank" rel="noopener noreferrer">
             Voir le code
@@ -39,6 +50,7 @@ const Cards = ({ title, category, image, github, live, description }) => {
 };
 
 export default Cards;
+
 
 
 

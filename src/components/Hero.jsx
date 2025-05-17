@@ -44,6 +44,7 @@ const Hero = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="hero-button"
+          aria-label="Voir mon CV (PDF, s’ouvre dans un nouvel onglet)"
         >
           Voir mon CV
         </a>
