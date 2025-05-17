@@ -16,8 +16,9 @@ const skills = [
   { icon: <FaGitAlt color="#F05032" />, label: "Git / GitHub", percent: 70 },
   { icon: <SiSwagger color="#85EA2D" />, label: "Swagger", percent: 40 },
   { icon: <SiRedux color="#764ABC" />, label: "Redux", percent: 40 },
-  { icon: <img src={figmaLogo} alt="Figma" style={{ width: "1.5rem", height: "1.5rem" }} />, label: "Figma", percent: 80 },
-  { icon: <img src={trelloLogo} alt="Trello / Kanban" style={{ width: "1.5rem", height: "1.5rem" }} />, label: "Kanban / Trello", percent: 80 },
+  { icon: <img src={figmaLogo} alt="" aria-hidden="true" style={{ width: "1.5rem", height: "1.5rem" }} />, label: "Figma", percent: 80 },
+  { icon: <img src={trelloLogo} alt="" aria-hidden="true" style={{ width: "1.5rem", height: "1.5rem" }} />, label: "Kanban / Trello", percent: 80 },
+  
 ];
 
 

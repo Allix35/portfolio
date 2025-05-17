@@ -44,10 +44,12 @@ const Hero = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="hero-button"
-          aria-label="Voir mon CV (PDF, s’ouvre dans un nouvel onglet)"
+          aria-label="Voir mon CV au format PDF, le document s’ouvre dans un nouvel onglet"
         >
-          Voir mon CV
+          Voir mon CV (PDF)
+          <span className="visually-hidden">, nouveau onglet, document PDF</span>
         </a>
+
       </div>
     </section>
   );
