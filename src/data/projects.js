@@ -7,9 +7,9 @@ import htmlLogo from "../assets/HTML5_logo_11_11zon.webp";
 import cssLogo from "../assets/CSS3_logo_8_11zon.webp";
 import sassLogo from "../assets/sass_18_11zon.webp";
 import jsLogo from "../assets/JSlogo_12_11zon.webp";
-import nodeLogo from "../assets/Node.js_logo.svg"; 
-import reactLogo from "../assets/React_logo_16_11zon"; 
-import swaggerLogo from "../assets/Swagger_logo_20-11zon.webp"; 
+import nodeLogo from "../assets/Node.js_logo_14_11zon.webp"; 
+import reactLogo from "../assets/React_logo_16_11zon.webp"; 
+import swaggerLogo from "../assets/Swagger_logo_20_11zon.webp"; 
 import reduxLogo from "../assets/redux_logo_17_11zon.webp"; 
 
 
