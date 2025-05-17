@@ -4,15 +4,16 @@ const Cards = ({ title, category, image, github, live, description }) => {
   return (
     <div className="project-card">
       <img
-        src={image}
-        alt={`Aperçu de ${title}`}
-        className="project-image"
-        loading="lazy"
-      />
+  src={image}
+  alt={`Aperçu de ${title}`}
+  className="project-image img-fluid"
+  loading="lazy"
+/>
+
       <div className="project-info">
         <h3>{title}</h3>
 
-        {/* Logos des technologies (accessibilité OK + lazy loading) */}
+        
         {Array.isArray(category) && (
           <div className="project-tech">
             {category.map((logo, index) => (
@@ -21,19 +22,19 @@ const Cards = ({ title, category, image, github, live, description }) => {
                 src={logo.src}
                 alt=""
                 aria-hidden="true"
-                className="tech-logo"
+                className="tech-logo img-fluid"
                 loading="lazy"
               />
             ))}
           </div>
         )}
 
-        {/* Description */}
+        
         {description && (
           <p className="project-description">{description}</p>
         )}
 
-        {/* Liens */}
+        
         <div className="project-links">
           <a href={github} target="_blank" rel="noopener noreferrer">
             Voir le code

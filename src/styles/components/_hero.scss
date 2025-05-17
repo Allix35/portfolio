@@ -95,6 +95,7 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+    align-items: center; 
     text-align: center;
     padding: $hero-padding-mobile;
 
@@ -113,11 +114,17 @@
 
       .hero-title {
         font-size: 2rem;
+        justify-content: center;
       }
 
       .hero-tagline {
         font-size: 1rem;
         margin-bottom: 1.5rem;
+        text-align: center;
+        justify-content: center;
+      }
+      .hero-button{
+        margin-bottom: 15px;
       }
     }
   }
