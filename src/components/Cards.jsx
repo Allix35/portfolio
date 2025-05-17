@@ -7,7 +7,6 @@ const Cards = ({ title, category, image, github, live, description }) => {
       <div className="project-info">
         <h3>{title}</h3>
 
-        {/* Affichage des logos de technologies */}
         {Array.isArray(category) && (
   <div className="project-tech">
     {category.map((logo, index) => (
@@ -16,7 +15,6 @@ const Cards = ({ title, category, image, github, live, description }) => {
   </div>
 )}
 
-        {/* Description facultative */}
         {description && <p className="project-description">{description}</p>}
 
         <div className="project-links">

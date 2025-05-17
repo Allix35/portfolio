@@ -4,8 +4,8 @@ import {
   FaClipboardList, FaPaintBrush
 } from "react-icons/fa";
 import { SiSwagger, SiRedux } from "react-icons/si";
-import figmaLogo from "../assets/figma_logo.png";      
-import trelloLogo from "../assets/trello_logo.png";    
+import figmaLogo from "../assets/figma_logo_9_11zon.webp";      
+import trelloLogo from "../assets/trello_logo_21_11.webp";    
 
 const skills = [
   { icon: <FaHtml5 color="#E34F26" />, label: "HTML / CSS", percent: 80 },

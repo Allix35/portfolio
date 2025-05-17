@@ -1,5 +1,5 @@
 import React from 'react';
-import allixPortrait from '../assets/Allix.jpg'; 
+import allixPortrait from '../assets/Allix_5_11zon.webp'; 
 
 const Hero = () => {
   return (

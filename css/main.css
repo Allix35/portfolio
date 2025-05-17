@@ -99,7 +99,7 @@ a {
   gap: 2rem;
   padding: 4rem;
   color: #fff;
-  background-image: url("/src/assets/hero-bckg-min.jpg");
+  background-image: url("/src/assets/hero-bckg-min_10_11.webp");
   background-size: cover;
   background-position: center;
 }
@@ -119,6 +119,7 @@ a {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
+  border-radius: 8px;
 }
 .hero .hero-content .hero-title {
   font-family: "Poppins", sans-serif;

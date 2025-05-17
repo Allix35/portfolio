@@ -1,16 +1,16 @@
-import bookiImage from "../assets/Booki.jpg";
-import ohmyfoodImage from "../assets/Ohmyfood.png";
-import sophiebluelImage from "../assets/sophiebluel.png";
-import kasaImage from "../assets/Kasa.png";
-import argentbankImage from "../assets/Argentbank.png";
-import htmlLogo from "../assets/HTML5_logo.svg";
-import cssLogo from "../assets/CSS3_logo.svg";
-import sassLogo from "../assets/sass.svg";
-import jsLogo from "../assets/JSlogo.png";
+import bookiImage from "../assets/Booki_7_11zon.webp";
+import ohmyfoodImage from "../assets/Ohmyfood_15_11zon.webp";
+import sophiebluelImage from "../assets/sophiebluel_19_11zon.webp";
+import kasaImage from "../assets/Kasa_13_11zon.webp";
+import argentbankImage from "../assets/Argentbank_6_11zon.webp";
+import htmlLogo from "../assets/HTML5_logo_11_11zon.webp";
+import cssLogo from "../assets/CSS3_logo_8_11zon.webp";
+import sassLogo from "../assets/sass_18_11zon.webp";
+import jsLogo from "../assets/JSlogo_12_11zon.webp";
 import nodeLogo from "../assets/Node.js_logo.svg"; 
-import reactLogo from "../assets/React_logo.svg"; 
-import swaggerLogo from "../assets/Swagger_logo.png"; 
-import reduxLogo from "../assets/redux_logo.svg"; 
+import reactLogo from "../assets/React_logo_16_11zon"; 
+import swaggerLogo from "../assets/Swagger_logo_20-11zon.webp"; 
+import reduxLogo from "../assets/redux_logo_17_11zon.webp"; 
 
 
 
