@@ -10,7 +10,13 @@ const Cards = ({ title, category, image, github, live, description }) => {
         {Array.isArray(category) && (
   <div className="project-tech">
     {category.map((logo, index) => (
-      <img key={index} src={logo} alt="Logo techno" className="tech-logo" loading="lazy" />
+      <img
+        key={index}
+        src={logo.src}
+        alt={logo.alt}
+        className="tech-logo"
+        loading="lazy"
+      />
     ))}
   </div>
 )}
