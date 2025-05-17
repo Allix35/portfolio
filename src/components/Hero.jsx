@@ -3,7 +3,7 @@ import allixPortrait from '../assets/Allix_5_11zon.webp';
 
 const Hero = () => {
   return (
-    <section className="hero container-fluid d-flex flex-column flex-md-row align-items-center justify-content-center py-5">
+    <section className="hero">
       <div className="hero-image-container">
         <img 
           src={allixPortrait} 
@@ -14,7 +14,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="hero-content text-center text-md-start">
+      <div className="hero-content">
         <h1 className="hero-title">
           {"Allix Dolou".split("").map((letter, index) => (
             <span
