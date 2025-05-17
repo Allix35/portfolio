@@ -9,6 +9,8 @@ const Hero = () => {
           src={allixPortrait} 
           alt="Portrait de Allix Dolou" 
           className="hero-image" 
+          loading="lazy"
+          
         />
       </div>
 

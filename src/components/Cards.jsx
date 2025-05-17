@@ -3,14 +3,14 @@ import React from "react";
 const Cards = ({ title, category, image, github, live, description }) => {
   return (
     <div className="project-card">
-      <img src={image} alt={`Aperçu de ${title}`} className="project-image" />
+      <img src={image} alt={`Aperçu de ${title}`} className="project-image" loading="lazy" />
       <div className="project-info">
         <h3>{title}</h3>
 
         {Array.isArray(category) && (
   <div className="project-tech">
     {category.map((logo, index) => (
-      <img key={index} src={logo} alt="Logo techno" className="tech-logo" />
+      <img key={index} src={logo} alt="Logo techno" className="tech-logo" loading="lazy" />
     ))}
   </div>
 )}
