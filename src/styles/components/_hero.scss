@@ -1,0 +1,125 @@
+@use '../variables' as *;
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: $hero-padding-desktop;
+  color: $text-color;
+  background-image: url('/src/assets/hero-bckg-min.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .hero-image-container {
+    max-width: 25%;
+    text-align: left;
+
+    .hero-image {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      filter: grayscale(100%);
+      border-radius: 8px;
+    }
+  }
+
+  .hero-content {
+    max-width: 60%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $text-color;
+
+    .hero-title {
+      font-family: $font-main;
+      font-size: 4.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+
+      span {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeInUp 4s ease forwards;
+        display: inline-block;
+      }
+    }
+
+    .hero-tagline {
+      font-family: $font-main;
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+      line-height: 1.4;
+    }
+
+    .about-text {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      max-width: 800px;
+      color: $text-color;
+    }
+
+    .hero-button {
+      display: inline-block;
+      font-family: $font-main;
+      font-size: 1rem;
+      font-weight: 500;
+      color: $text-color;
+      text-decoration: none;
+      border: 2px solid $text-color;
+      padding: 0.75rem 1.5rem;
+      margin-right: 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $text-color;
+        color: $bg-color;
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: $hero-padding-mobile;
+
+    .hero-image-container {
+      max-width: 100%;
+      text-align: center;
+
+      .hero-image {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    .hero-content {
+      max-width: 100%;
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .hero-tagline {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+  

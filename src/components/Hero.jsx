@@ -1,0 +1,48 @@
+import React from 'react';
+import allixPortrait from '../assets/Allix.jpg'; 
+
+const Hero = () => {
+  return (
+    <section className="hero">
+
+      <div className="hero-image-container">
+      <img 
+        src={allixPortrait} 
+        alt="Portrait de Allix Dolou" 
+        className="hero-image" 
+      />
+      </div>
+
+      <div className="hero-content">
+      <h1 className="hero-title">
+        {"Allix Dolou".split("").map((letter, index) => (
+    <span
+      key={index}
+      style={{
+        animationDelay: `${index * 0.1}s`,
+        display: "inline-block",
+        ...(letter === " " && { width: "0.6rem" }) 
+      }}
+    >
+      {letter === " " ? "\u00A0" : letter} 
+    </span>
+  ))}
+</h1>
+
+        <p className="hero-tagline">Développeuse Web Junior</p>
+        
+        <p className="about-text">
+          Issu d’un parcours en communication, vente et webmarketing, j’ai développé une forte sensibilité pour la stratégie digitale et l’expérience utilisateur. 
+          Animé par une volonté d’évoluer vers un métier technique, j’ai entrepris une reconversion professionnelle en développement web via la formation diplômante d’OpenClassrooms. 
+          Aujourd’hui, je combine mes compétences en communication digitale avec mes savoir-faire techniques pour concevoir des interfaces web modernes, performantes et centrées utilisateur.
+        </p>
+        <a href="#contact" className="hero-button">Me contacter</a>
+        <a href="/CV_Allix_Dolou.pdf" className="hero-button" target="_blank" rel="noopener noreferrer">Voir mon CV</a>
+
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
+

@@ -1,0 +1,31 @@
+@use "../variables" as *;
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    .nav-links {
+      display: flex;
+      gap: 2rem; 
+      margin-left: auto;
+    }
+  
+    .nav-link {
+      color: $color-text;
+      text-decoration: none;
+      font-family: $font-main;
+      font-weight: 500;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

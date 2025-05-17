@@ -1,0 +1,20 @@
+@use './variables' as *;
+@use './mixins';
+@use './reset';
+@use './global';
+
+@use './layout/header' as header;
+@use './layout/footer' as footer;
+
+@use './components/hero' as hero;
+@use './components/cards' as cards;
+@use './components/skills' as skills;
+
+
+@use './pages/about' as about;
+@use './pages/projects' as projects;
+
+
+
+
+

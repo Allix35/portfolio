@@ -1,0 +1,37 @@
+@use "../variables" as *;
+
+.main-footer {
+  padding: 2rem 1rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+
+  p {
+    font-size: 0.95rem;
+    margin-top: 2rem;
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 40px;
+
+    a {
+      color: #fff;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-accent; // ou une couleur personnalisée
+      }
+
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+  
+  
