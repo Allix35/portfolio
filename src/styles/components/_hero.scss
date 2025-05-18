@@ -1,14 +1,27 @@
 @use '../variables' as *;
 
 .hero {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: flex-start;
   gap: 2rem;
   padding: $hero-padding-desktop;
   color: $text-color;
-  background-image: url('/hero-bckg-min_10_11zon.webp');
-  background-size: cover;
-  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/hero-bckg-min_10_11zon.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 1;
+  }
 
   .hero-image-container {
     max-width: 25%;
@@ -74,6 +87,7 @@
       border: 2px solid $text-color;
       padding: 0.75rem 1.5rem;
       margin-right: 1rem;
+      margin-bottom: 1rem;
       border-radius: 4px;
       transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -95,14 +109,13 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     text-align: center;
     padding: $hero-padding-mobile;
 
     .hero-image-container {
       max-width: 100%;
       text-align: center;
-
 
       .hero-image {
         width: 80%;
@@ -112,6 +125,7 @@
 
     .hero-content {
       max-width: 100%;
+      padding: 1rem;
 
       .hero-title {
         font-size: 2rem;
@@ -122,10 +136,12 @@
         font-size: 1rem;
         margin-bottom: 1.5rem;
         text-align: center;
-        justify-content: center;
       }
-      .hero-button{
-        margin-bottom: 15px;
+
+      .hero-button {
+        margin-right: 0;
+        width: auto;
+        margin-bottom: 1rem;
       }
     }
   }

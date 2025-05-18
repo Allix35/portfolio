@@ -22,7 +22,6 @@ img {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
   color: #000000;
   margin: 0;
   padding: 0;
@@ -94,14 +93,26 @@ a {
 }
 
 .hero {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: flex-start;
   gap: 2rem;
   padding: 4rem;
   color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: url("/hero-bckg-min_10_11zon.webp");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 1;
 }
 .hero .hero-image-container {
   max-width: 25%;
@@ -161,6 +172,7 @@ a {
   border: 2px solid #fff;
   padding: 0.75rem 1.5rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -192,6 +204,7 @@ a {
   }
   .hero .hero-content {
     max-width: 100%;
+    padding: 1rem;
   }
   .hero .hero-content .hero-title {
     font-size: 2rem;
@@ -201,10 +214,11 @@ a {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    justify-content: center;
   }
   .hero .hero-content .hero-button {
-    margin-bottom: 15px;
+    margin-right: 0;
+    width: auto;
+    margin-bottom: 1rem;
   }
 }
 .project-card {
