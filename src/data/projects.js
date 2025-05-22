@@ -22,6 +22,8 @@ const projects = [
     description: "Refonte d’une page d’agence de voyage avec HTML5 et CSS3, en respectant la maquette Figma et le responsive design.",
     image: bookiImage,
     github: "https://github.com/Allix35/Booki",
+    live: "https://allix35.github.io/Booki/",
+
   },
   {
     title: "Ohmyfood",
@@ -46,6 +48,7 @@ const projects = [
     description: "Sophie Bluel est un site web responsive de présentation pour une architecte d’intérieur, développé en JavaScript avec une gestion dynamique des contenus via API REST et une interface d’administration sécurisée grâce à Node.js et JWT.",
     image: sophiebluelImage,
     github: "https://github.com/Allix35/Portfolio-architecte-Sophie-Bluel",
+    live: "https://allix35.github.io/Portfolio-architecte-Sophie-Bluel/",
   },
   {
     title: "Kasa",
@@ -60,6 +63,7 @@ const projects = [
     description: "Kasa est une application web de location immobilière développée avec React, utilisant React Router pour la navigation, une gestion des composants réutilisables, et un design responsive basé sur SASS. Les données sont récupérées localement au format JSON pour simuler une API.",
     image: kasaImage,
     github: "https://github.com/Allix35/Kasa",
+    live: "https://allix35.github.io/Kasa/",
   },
   {
     title: "Argent Bank",
@@ -76,6 +80,7 @@ const projects = [
     description: "Argent Bank est une application bancaire fullstack développée avec React, Redux et Sass. L’authentification est sécurisée via JWT, les données sont échangées via une API REST documentée avec Swagger. L’interface responsive permet aux utilisateurs de consulter leurs comptes, leurs transactions, et de modifier leurs informations personnelles.",
     image: argentbankImage,
     github: "https://github.com/Allix35/ArgentBank-Frontend",
+    live: "https://allix35.github.io/ArgentBank-Backend/",
   }
 ];
 
