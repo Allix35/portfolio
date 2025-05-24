@@ -8,7 +8,6 @@
   gap: 2rem;
   padding: $hero-padding-desktop;
   color: $text-color;
-  min-height: 100vh;
   overflow: hidden;
 
   &::before {
@@ -53,9 +52,9 @@
       margin-bottom: 1rem;
 
       span {
-        opacity: 0;
-        transform: translateY(10px);
-        animation: fadeInUp 4s ease forwards;
+        opacity: 0; //Start unvisible
+        transform: translateY(10px); // Move 10px down
+        animation: fadeInUp 4s ease forwards; // display fadeInUp
         display: inline-block;
       }
     }
@@ -101,8 +100,8 @@
 
 @keyframes fadeInUp {
   to {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; // Text visible at the end of animation
+    transform: translateY(0); // Back to his position
   }
 }
 

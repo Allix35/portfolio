@@ -21,11 +21,11 @@ const Hero = () => {
 
         {/* Title with animation */}
         <h1 className="hero-title">
-          {"Allix Dolou".split("").map((letter, index) => (
+          {"Allix Dolou".split("").map((letter, index) => ( // Split the string into an array of letters and spaces
             <span
               key={index}
               style={{
-                animationDelay: `${index * 0.1}s`, // Animation delay for each letter
+                animationDelay: `${index * 0.1}s`, // Animation delay for each letter, first letter start at 0s
                 display: "inline-block",
                 ...(letter === " " && { width: "0.6rem" }) // Adding visual space for empty letter
               }}

@@ -7,5 +7,5 @@ export default defineConfig({
     react(), // React integration with Vite
     purgecss(),
   ],
-  base: '/portfolio/', // Fot Github Page, to find the right fiels
+  base: '/portfolio/', // For Github Page, to find the right fiels
 });
