@@ -1,5 +1,7 @@
+@use '../mixins' as *;
+
 .projects-section {
-    padding: 4rem 2rem;
+    @include section-padding;
     background: #f6f6f6;
   
     h2 {
