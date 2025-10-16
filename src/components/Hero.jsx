@@ -1,4 +1,4 @@
-import allixPortrait from '../assets/Allix_5_11zon.webp'; 
+import allixPortrait from '../assets/Allix_Dolou.webp'; 
 
 // Hero component
 const Hero = () => {
