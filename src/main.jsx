@@ -4,6 +4,7 @@ import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom'; 
 import '../css/main.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import './styles/main.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode> {/* Detecte errors during website developpement */}

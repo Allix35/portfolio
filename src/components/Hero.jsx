@@ -40,9 +40,8 @@ const Hero = () => {
         
         {/* Presentation */}
         <p className="about-text">
-          Issu d’un parcours en communication, vente et webmarketing, j’ai développé une forte sensibilité pour la stratégie digitale et l’expérience utilisateur. 
-          Animée par une volonté d’évoluer vers un métier technique, j’ai entrepris une reconversion professionnelle en développement web via la formation diplômante d’OpenClassrooms. 
-          Aujourd’hui, je combine mes compétences en communication digitale avec mes savoir-faire techniques pour concevoir des interfaces web modernes, performantes et centrées utilisateur.
+          Issue d’un parcours en communication et webmarketing, j’ai développé une sensibilité pour la stratégie digitale et l’expérience utilisateur. Après une reconversion en développement web chez OpenClassrooms, je conçois aujourd’hui des interfaces modernes, performantes et centrées sur l’utilisateur. <br />
+          J’interviens également pour corriger vos bugs front-end, améliorer les performances (vitesse, accessibilité, chargement), optimiser le SEO technique, intégrer de nouveaux éléments et garantir un design responsive sur tous les écrans.
         </p>
 
         {/* Anchorage button */}

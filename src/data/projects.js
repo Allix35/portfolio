@@ -11,6 +11,18 @@ import nodeLogo from "../assets/Node.js_logo_14_11zon.webp";
 import reactLogo from "../assets/React_logo_16_11zon.webp"; 
 import swaggerLogo from "../assets/Swagger_logo_20_11zon.webp"; 
 import reduxLogo from "../assets/redux_logo_17_11zon.webp"; 
+import argentbank1 from "../assets/argentbank1.webp";
+import argentbank2 from "../assets/argentbank2.webp";
+import argentbank3 from "../assets/argentbank3.webp";
+import kasa1 from "../assets/kasa1.webp";
+import kasa2 from "../assets/kasa2.webp";
+import kasa3 from "../assets/kasa3.webp";
+import kasa4 from "../assets/kasa4.webp";
+import kasa5 from "../assets/kasa5.webp";
+import sophie1 from "../assets/sophie1.webp";
+import sophie2 from "../assets/sophie2.webp";
+import sophie3 from "../assets/sophie3.webp";
+import sophie4 from "../assets/sophie4.webp";
 
 const projects = [
   {
@@ -21,7 +33,6 @@ const projects = [
     ],
     description: "Refonte d’une page d’agence de voyage avec HTML5 et CSS3, en respectant la maquette Figma et le responsive design.",
     image: bookiImage,
-    github: "https://github.com/Allix35/Booki",
     live: "https://allix35.github.io/Booki/",
 
   },
@@ -34,7 +45,6 @@ const projects = [
     ],
     description: "Ohmyfood est un site web responsive de réservation de menus gastronomiques à Paris, développé en HTML5 et SASS avec animations CSS pour une expérience utilisateur fluide et esthétique.",
     image: ohmyfoodImage,
-    github: "https://github.com/Allix35/Ohmyfood",
     live: "https://allix35.github.io/Ohmyfood/"
   },
   {
@@ -47,8 +57,13 @@ const projects = [
     ],
     description: "Sophie Bluel est un site web responsive de présentation pour une architecte d’intérieur, développé en JavaScript avec une gestion dynamique des contenus via API REST et une interface d’administration sécurisée grâce à Node.js et JWT.",
     image: sophiebluelImage,
-    github: "https://github.com/Allix35/Portfolio-architecte-Sophie-Bluel",
-    live: "https://allix35.github.io/Portfolio-architecte-Sophie-Bluel/",
+    maquettes: [
+      sophie1,
+      sophie2,
+      sophie3,
+      sophie4
+    ],
+    live: null,
   },
   {
     title: "Kasa",
@@ -62,8 +77,14 @@ const projects = [
     ],
     description: "Kasa est une application web de location immobilière développée avec React, utilisant React Router pour la navigation, une gestion des composants réutilisables, et un design responsive basé sur SASS. Les données sont récupérées localement au format JSON pour simuler une API.",
     image: kasaImage,
-    github: "https://github.com/Allix35/Kasa",
-    live: "https://allix35.github.io/Kasa/",
+    maquettes: [
+      kasa1,
+      kasa2,
+      kasa3,
+      kasa4,
+      kasa5
+    ],
+    live: null,
   },
   {
     title: "Argent Bank",
@@ -79,8 +100,12 @@ const projects = [
     ],
     description: "Argent Bank est une application bancaire fullstack développée avec React, Redux et Sass. L’authentification est sécurisée via JWT, les données sont échangées via une API REST documentée avec Swagger. L’interface responsive permet aux utilisateurs de consulter leurs comptes, leurs transactions, et de modifier leurs informations personnelles.",
     image: argentbankImage,
-    github: "https://github.com/Allix35/ArgentBank-Frontend",
-    live: "https://allix35.github.io/ArgentBank-Backend/",
+    maquettes: [
+    argentbank1,
+    argentbank2,
+    argentbank3,
+    ],
+    live: null,
   }
 ];
 
